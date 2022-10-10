@@ -1,0 +1,142 @@
+@media screen and (max-width:1345px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+
+        &-cover {
+            margin-right: 0;
+
+            &-content {
+                width: 100%;
+            }
+        }
+
+        .banner-background,
+        .cover-background {
+            width: 100%;
+            height: 610px;
+        }
+
+        .banner-cards {
+            padding: 0;
+            justify-content: space-around;
+        }
+    }
+    .news {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:991px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+
+        .left-card {
+            margin-right: 10px;
+        }
+
+        .right-card-profile {
+            width: 360px;
+        }
+    }
+
+    .about-us {
+        margin: 0 100px;
+
+        &__cards {
+            flex-wrap: wrap;
+        }
+    }
+
+
+    .services {
+        display: block;
+        margin: 0 50px 40px;
+        text-align: center;
+
+        &__title {
+            position: static;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .banner {
+        &-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .services {
+        &__title {
+            font-size: 25px;
+        }
+
+        .map-image {
+            height: 225px;
+        }
+
+        .map-locators {
+            height: 125px;
+        }
+
+    }
+}
+
+@media screen and (max-width:575px) {
+    .banner {
+        &-cards {
+            .left-card-content {
+                padding: 20px;
+            }
+
+            .right-card-profile,
+            .left-card-bg {
+                width: 300px;
+                font-size: 15px;
+            }
+
+            &__title {
+                font-size: 20px;
+                font-weight: $bold;
+                margin-bottom: 5px;
+            }
+        }
+
+
+    }
+
+    .about-us {
+        margin: 0 30px;
+
+        &__title {
+            font-size: 15px;
+        }
+
+        &__cards {
+            flex-direction: column;
+        }
+    }
+    .services {
+        margin: 0;
+
+        .map-image {
+            height: 175px;
+        }
+        .map-locators {
+            height: 90px;
+        }
+    }
+
+}
+
+@media screen and (max-width:359px) {
+
+    .banner-cover-content__title {
+        font-size: 20px !important;
+    }
+}
